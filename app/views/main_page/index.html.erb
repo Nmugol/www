@@ -1,0 +1,41 @@
+<style>
+    #box
+    {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    #menu
+    {
+        float: left;
+    }
+
+    #podstrony
+    {
+        margin-left: 5px;
+        padding: 5px 2px;
+    }
+
+    #info
+    {
+        float: left;
+        margin: 10px;
+    }
+
+</style>
+
+<div id="box">
+  <div id="menu">
+    <h1 id="home"><%= link_to "Home", "/" %></h1>
+    <div id="podstrony">
+      <ul>
+        <li><%= link_to "O mnie", "mojastrona" %></li>
+        <li><%= link_to "Kontakt", "/kontakt" %></li>
+        <li><%= link_to "Książki", "/books" %></li>
+      </ul>
+    </div>
+  </div>
+  <div id="info">
+    Hello world
+  </div>
+</div>
